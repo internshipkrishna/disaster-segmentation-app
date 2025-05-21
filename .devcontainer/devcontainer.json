@@ -1,0 +1,13 @@
+{
+  "name": "Disaster Segmentation Dev",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.10"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "postCreateCommand": "pip install -r backend/requirements.txt && cd frontend && npm install",
+  "forwardPorts": [3000, 8000]
+}
